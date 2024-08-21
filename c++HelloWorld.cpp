@@ -1,11 +1,11 @@
 #include <iostream>
 // #include <vector>
+// #include <cmath>
 
 // Comment
 /*
 Comment
 */
-
 
 // THIS WAS FOR NAMESPACES
 // namespace first {
@@ -14,7 +14,6 @@ Comment
 // namespace second {
 //     int x = 2;
 // }
-
 
 // THIS IS FOR TYPEDEF
 // But it is basically just renaming data types
@@ -27,9 +26,8 @@ Comment
 // using num_t = int;
 
 int main() {
-    // ARITHMETIC OPERATORS: ------------------------------
-
-
+    
+    
     return 0;
 }
     // INTRO: --------------------------------
@@ -96,4 +94,77 @@ int main() {
     // std::cout << firstName << '\n';
     // std::cout << age << '\n';
 
+    // ARITHMETIC OPERATORS: ------------------------------
+
+    // int students = 20;
+
+    // students += 2;
+    // students ++;
+
+    // students -= 2;
+    // students --;
+
+    // students *= 2;
+    // students /= 3;
+
+    // int remainder = students % 2;
+
+    // std::cout << remainder << '\n';
+
+    // std::cout << students;
+
+    // TYPE CONVERSION: --------------------------
+
+    // double x = (int) 3.14;
+    // char y = 100;
+
+    // std::cout << x << '\n';
+    // std::cout << y << '\n';
+    // std::cout << (char) 101 << '\n';
+
+    // int correct = 8;
+    // int questions = 10;
+    // double score = correct/(double)questions * 100;
+
+    // std::cout << score << "%";
     
+    // USER INPUT: ----------------------------
+
+    // std::string name;
+    // std::string fullName;
+    // int age;
+
+    // std::cout << "What is your name?";
+    // std::cin >> name;
+    // std::cout << "How old are you?";
+    // std::cin >> age;
+    // // When get line is after a cin, the get line will take in the leftover \n from the previous cin
+    // // To fix this we add std::ws to eliminate any whitespace or newline characters
+    // std::cout << "What is your full name?";
+    // std::getline(std::cin >> std::ws, fullName);
+  
+    // std::cout << "Hello " << name << ", you are " << age << " years old." << '\n';
+    // std::cout << fullName;
+
+    // USEFUL MATH FUNCTIONS: ------------------------------
+
+    // double x = 3;
+    // double y = 4;
+    // double pie = 3.145;
+    // double z;
+     
+    // I mean what do you think these two do... lol
+    // z = std::max(x, y);
+    // z = std::min(x, y);
+
+    // These need the cmath import
+    // z = pow(2, 3);
+    // z = sqrt(9);
+    // z = abs(-3);
+    // z = round(pie);
+    // YOOOOO CEILING AND FLOOR FUNCTIONS #DISCRETEMATHISOP
+    // z = ceil(pie);
+    // z = floor(pie);
+
+    // std::cout << z;
+
