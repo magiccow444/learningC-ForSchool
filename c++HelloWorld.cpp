@@ -1,6 +1,7 @@
 #include <iostream>
-// #include <vector>
-// #include <cmath>
+#include <vector>
+#include <cmath>
+#include <ctime>
 
 // Comment
 /*
@@ -25,11 +26,59 @@ Comment
 // using txt_t = std::string;
 // using num_t = int;
 
+// void happyBirthday(std::string bdayPerson, int age);
+
+// double square(double length);
+// double cube(double length);
+// std::string concatStrings(std::string string1, std::string string2);
+
+// void bakePizza();
+// void bakePizza(std::string topping1);
+// void bakePizza(std::string topping1, std::string topping2);
+
+// void printNum(int myNum);
+
 int main() {
-    
-    
+
+
     return 0;
-}
+}   
+
+// void printNum (int myNum) {
+//     std::cout << myNum;
+// }
+
+// void bakePizza() {
+//     std::cout << "Here is your pizza\n";
+// }
+
+// void bakePizza(std::string topping1) {
+//     std::cout << "Here is your " << topping1 << " pizza\n";
+// }
+
+// void bakePizza(std::string topping1, std::string topping2) {
+//     std::cout << "Here is your " << topping1 << " and " << topping2 << " pizza\n";
+// }
+
+// std::string concatStrings(std::string string1, std::string string2) {
+//     return string1 + " " + string2;
+// }
+
+// double square(double length) {
+//     return length * length;
+// }
+// double cube(double length) {
+//     return length * length * length;
+// }
+
+// void happyBirthday(std::string bdayPerson, int age) {
+//     std::cout << "Happy Birthday to you!\n";
+//     std::cout << "Happy Birthday to you!\n";
+//     std::cout << "Happy Birthday dear " << bdayPerson << "!\n";
+//     std::cout << "Happy Birthday to you!\n";
+//     std::cout << "YAY now you're " << age << "!\n";
+// }
+
     // INTRO: --------------------------------
 
     // std::cout << "I like pizza" << std::endl;
@@ -168,3 +217,411 @@ int main() {
 
     // std::cout << z;
 
+    // HYPOTENUSE CALC PROGRAM: ----------------------------
+
+    // double a;
+    // double b;
+    // double c;
+    
+    // std::cout << "Enter side A: ";
+    // std::cin >> a;
+    
+    // std::cout << "Enter side B: ";
+    // std::cin >> b;
+
+    // c = sqrt(pow(a, 2) + pow(b, 2));
+
+    // std::cout << "Side C is: " << c;
+
+    // IF STATEMENTS: --------------------------------------
+
+    // int age;
+
+    // std::cout << "Enter your age: ";
+    // std::cin >> age;
+
+    // if (age >= 100) {
+    //     std::cout << "You are too old to enter this site!";
+    // }
+    // else if (age >= 18) {
+    //     std::cout << "Welcome to the site!";
+    // }    
+    // else if (age < 0) {
+    //     std::cout << "You haven't been born yet!";
+    // }
+    // else {
+    //     std::cout << "You are not old enough to enter :(";
+    // }
+
+    // SWITCH STATEMENTS: ----------------------------
+
+    // int month;
+    // std::cout << "Enter the month, (1-12): ";
+    // std::cin >> month;
+    
+    // switch (month) {
+    //     case 1:
+    //         std::cout << "It is January";
+    //         break;
+    //     case 2:
+    //         std::cout << "It is February";
+    //         break;
+    //     case 3:
+    //         std::cout << "It is March";
+    //         break;
+    //     case 4:
+    //         std::cout << "It is April";
+    //         break;
+    //     case 5:
+    //         std::cout << "It is May";
+    //         break;
+    //     case 6: 
+    //         std::cout << "It is June";
+    //         break;
+    //     case 7:
+    //         std::cout << "It is July";
+    //         break;
+    //     case 8:
+    //         std::cout << "It is August";
+    //         break;
+    //     case 9: 
+    //         std::cout << "It is September";
+    //         break;
+    //     case 10:
+    //         std::cout << "It is October";
+    //         break; 
+    //     case 11:
+    //         std::cout << "It is November";
+    //         break;  
+    //     case 12:
+    //         std::cout << "It is December";
+    //         break;
+    //     default:
+    //         std::cout << "Please enter in only numbers (1-12)";
+    // }   
+
+    // char grade;
+
+    // switch (grade) {
+    //     case 'A':
+    //         std::cout << "You got an A!";
+    //         break;
+    // }
+
+    // CALCULATOR PROGRAM: ----------------------------
+
+    // char op;
+    // double num1;
+    // double num2;
+    // double result;
+
+    // std::cout << "*********** Calculator ****************\n";
+
+    // std::cout << "Enter either (+ - * /): ";
+    // std::cin >> op;
+
+    // std::cout << "Enter the first number: ";
+    // std::cin >> num1;
+
+    // std::cout << "Enter the second number: ";
+    // std::cin >> num2;
+
+    // switch (op) {
+    //     case '+':
+    //         result = num1 + num2;
+    //         std::cout << "The answer is " << result << '\n';
+    //         break;
+    //     case '-':
+    //         result = num1 - num2;
+    //         std::cout << "The answer is " << result << '\n';
+    //         break;
+    //     case '*':
+    //         result = num1 * num2;
+    //         std::cout << "The answer is " << result << '\n';
+    //         break;
+    //     case '/':
+    //         result = num1 / num2;
+    //         std::cout << "The answer is " << result << '\n';
+    //         break;
+    //     default:
+    //         std::cout << "That wasn't a valid operator\n";
+    //         break;
+    // }
+    
+    // std::cout << "****************************************";
+
+    // TERNARY OPERATORS: ----------------------------
+
+    // int grade = 75;
+
+    // if (grade >= 60) {
+    //     std::cout << "You pass!";
+    // }   
+    // else {
+    //     std::cout << "You fail :(";
+    // }
+
+    // The if/else above is equal to the ternary operator equation below
+
+    // grade >= 60 ? std::cout << "You pass!" : std::cout << "You fail!";
+
+    // LOGICAL OPERATORS: -------------------------------
+
+    // int temp;
+    // bool sunny = false;
+
+    // std::cout << "Enter the temperature: ";
+    // std::cin >> temp;
+
+    // if (temp > 0 && temp < 30) {
+    //     std::cout << "The temperature is good!";
+    // }
+    // if (temp <= 0 || temp >= 30) {
+    //     std::cout << "The temperature is bad!";
+    // }
+    // if (!sunny) {
+    //     std::cout << "It is not sunny outside";
+    // }
+
+    // TEMP CONVERSION PROGRAM: ---------------------------
+
+    // double temp;
+    // char unit;
+
+    // std::cout << "***** TEMP CONVERSION *******\n";
+    
+    // std::cout << "F = Farenheit\n";
+    // std::cout << "C = Celsius\n";
+    // std::cout << "What unit would you like to convert to? ";
+    // std::cin >> unit;
+
+    // if (unit == 'F' || unit == 'f') {
+    //     std::cout << "Enter the temperature in Celsius: ";
+    //     std::cin >> temp;
+
+    //     temp = (1.8 * temp) + 32.0;
+    //     std::cout << "Temperature is: " << temp << "F\n";
+    // }
+    // else if (unit == 'C' || unit == 'c') {
+    //     std::cout << "Enter the temperature in Fahrenheit: ";
+
+    //     temp = (temp - 32.0) / 1.8;
+    //     std::cout << "Temperature is: " << temp << "C\n";
+    // }
+    // else {
+    //     std::cout << "Please enter in only C or F\n";
+    // }
+
+    // std::cout << "*********************************";
+
+    // USEFUL STRING METHODS: ------------------------------
+
+    // std::string name;
+
+    // std::cout << "Enter your name: ";
+    // std::getline(std::cin, name);
+
+    // if (name.length() > 12) {
+    //     std::cout << "Your name can't be more than 12 characters long.";
+    // }
+    // else {
+    //     std::cout << "Welcome " << name;
+    // }
+
+    // if (name.empty()) {
+    //     std::cout << "You didn't enter your name";
+    // }
+    // else {
+    //     std::cout << "Hello " << name; 
+    // }
+
+    // name.clear();
+
+    // std::cout << "Hello " << name;
+    
+    // name.append("@gamil.com");
+
+    // std::cout << "Your username is now " << name;
+
+    // std::cout << name.at(1);
+
+    // name.insert(0, "@");
+
+    // std::cout << name;
+
+    // std::cout << name.find(' '); 
+    
+    // name.erase(0, 3);
+
+    // std::cout << name;
+
+    // WHILE LOOPS: ---------------------------------
+
+    // std::string name;
+
+    // while (name.empty()) {
+    //     std::cout << "Enter your name: ";
+    //     std::getline(std::cin, name);
+    // }
+
+    // std::cout << "Hello " << name;
+
+    // int number;
+
+    // Do while means do the first part once no matter what
+    // and then loop if the condition is not fulfilled
+
+    // do {
+    //     std::cout << "Enter a positive #: ";
+    //     std::cin >> number;
+    // } while (number < 0);
+
+    // std::cout << "The # is: " << number;
+
+    // FOR LOOPS: --------------------------------------
+
+    // for (int i = 10; i > -1; i--) {
+    //     std::cout << i << '\n';
+    // }
+
+    // std::cout << "HAPPY NEW YEAR!\n";
+
+    // BREAK AND CONTINUE: ----------------------------------
+
+    // for (int i = 0; i < 20; i++) {
+    //     if (i == 13) {
+    //         continue;
+    //     }
+    //     if (i == 19) {
+    //         break;
+    //     }
+    //     std::cout << i << '\n';
+    // }
+
+    // NESTED LOOPS: ------------------------------------
+    
+    // int rows;
+    // int columns;
+    // char symbol;
+    
+    // std::cout << "How many rows: ";
+    // std::cin >> rows;
+    
+    // std::cout << "How many columns: ";
+    // std::cin >> columns;
+
+    // std::cout << "Enter a symbol to use: ";
+    // std::cin >> symbol;
+    
+    // for (int i = 0; i < rows; i++) {
+    //     for (int j = 0; j < columns; j++) {
+    //         std::cout << symbol;
+    //     }
+    //     std::cout << '\n';
+    // }
+
+    // RANDOM NUMBER GENERATOR: ---------------------
+
+    //LOL usually programmers use the current time as the seed
+    // srand(time(NULL)); 
+
+    // int num1 = (rand() % 6) + 1;
+    // int num2 = (rand() % 6) + 1;
+    // int num3 = (rand() % 20) + 1;
+
+    // std::cout << num1 << '\n' << num2 << '\n' << num3;
+
+    // RANDOM EVENT GENERATOR: -------------------------------
+
+    // srand(time(0));
+    // int randNum = rand() % 5 + 1;
+
+    // switch(randNum) {
+    //     case 1: 
+    //         std::cout << "You win a bumper sticker!\n";
+    //         break;
+    //     case 2:
+    //         std::cout << "You win a t-shirt!\n";
+    //         break;
+    //     case 3:
+    //         std::cout << "You win a free lunch!\n";
+    //         break;
+    //     case 4:
+    //         std::cout << "You win a gift card!\n";
+    //         break;
+    //     case 5:
+    //         std::cout << "You win a concert ticket!\n";
+    //         break;
+    // }
+
+    // NUMBER GUESSING GAME: --------------------------
+
+    // int num;
+    // int guess;
+    // int tries;
+
+    // srand(time(NULL));
+    // num = rand() % 100 + 1;
+
+    // std::cout << "*********** NUMBER GUESSING GAME *************\n";
+
+    // do {
+    //     std::cout << "Enter a guess between (1-100): ";
+    //     std::cin >> guess;
+    //     tries++;
+
+    //     if (guess > num) {
+    //         std::cout << "Too high\n";
+    //     }
+    //     else if (guess < num) {
+    //         std::cout << "Too low\n";
+    //     }
+    //     else {
+    //         std::cout << "CORRECT! # of tries: " << tries << '\n';
+    //     }
+    // } while (guess != num);
+
+    // std::cout << "***********************************************";
+
+    // USER DEFINED FUNCTIONS: ----------------------------
+
+    // std::string name = "Nico";
+    // int age = 19;
+
+    // happyBirthday(name, age);
+
+    // RETURN IN C++: -----------------------------------
+
+    // double length = 6.0;
+    // double area = square(length);
+    // double volume = cube(length);
+
+    // std::cout << "Area: " << area << "cm^2\n";
+    // std::cout << "Volume: " << volume << "cm^3\n";
+
+    // std::string first = "Nico";
+    // std::string last = "Mendoza";
+    // std::string full = concatStrings(first, last);
+
+    // std::cout << full;
+
+    // FUNCTION OVERLOADING: ------------------------------
+
+    // Don't forget a functions signature is its name and parameters
+    // so to overload you need to change the parameters
+
+    // bakePizza("pepperoni", "tomato");
+
+    // VARIABLE SCOPE: -----------------------------------
+    
+    // Functions will use local variables over global if they are
+    // named the same
+
+    // int myNum = 1;
+
+    // If you want to use the global variable over the local one
+    // just put two colons before like so:
+
+    // std::cout << ::myNum;
+
+    // printNum(myNum);
