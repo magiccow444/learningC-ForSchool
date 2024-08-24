@@ -40,7 +40,6 @@ Comment
 
 int main() {
 
-
     return 0;
 }   
 
@@ -625,3 +624,29 @@ int main() {
     // std::cout << ::myNum;
 
     // printNum(myNum);
+
+    // ARRAYS: -----------------------------------------
+
+    // std::string cars[] = {"Kia", "Corvette", "Mustang"};
+    // std::string otherCars[3];
+
+    // cars[1] = "Camaro";
+    // otherCars[0] = "Camry";
+    // otherCars[1] = "VolksW";
+    // otherCars[2] = "Audi";
+
+    // std::cout << cars[0] << '\n';
+    // std::cout << cars[1] << '\n';
+    // std::cout << cars[2] << "\n\n";
+
+    // std::cout << otherCars[0] << '\n';
+    // std::cout << otherCars[1] << '\n';
+    // std::cout << otherCars[2] << '\n';
+
+    // double prices[] = {5.00, 7.50, 9.99, 15.00};
+
+    // std::cout << prices[0] << '\n';
+    // std::cout << prices[1] << '\n';
+    // std::cout << prices[2] << '\n';
+    // std::cout << prices[3] << '\n';
+
