@@ -38,10 +38,57 @@ Comment
 
 // void printNum(int myNum);
 
+// double getTotal(double prices[], int size);
+
+// int searchArray(std::string array[], int size, std::string target);
+// int binarySearch(int array[], int size, int target);
+
 int main() {
+
 
     return 0;
 }   
+
+// YOOO I IMPLEMENTED THIS ALL ON MY OWN FOR THE FIRST TIME IN C++ WITH BARELY ANY HELP!! :DDDD
+// int binarySearch(int array[], int size, int target) {
+//     int low = 0;
+//     int high = size - 1;
+
+//     while (low <= high) {
+//         int mid = (low + high) / 2;
+//         if (target > array[mid]) {
+//             low =  mid + 1;
+//         }
+//         else if (target < array[mid]) {
+//             high = mid - 1;
+//         }
+//         else {
+//             return mid;
+//         }
+//     }
+//     return -1;
+// }
+
+// int searchArray(std::string array[], int size, std::string target) {
+//     for (int i = 0; i < size; i++) {
+//         if (array[i] == target) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// When you pass an array through a function it decays into a pointer
+// this means it no longer knows how long the original array is so we
+// have to explicitly tell it.
+// double getTotal(double prices[], int size) {
+//     double total = 0;
+//     for (int i = 0; i < size; i++) {
+//         total += prices[i];
+//     }
+
+//     return total;
+// }
 
 // void printNum (int myNum) {
 //     std::cout << myNum;
@@ -650,3 +697,70 @@ int main() {
     // std::cout << prices[2] << '\n';
     // std::cout << prices[3] << '\n';
 
+    // SIZE OF OPERATOR: --------------------------------
+
+    // std::string name = "Nico";
+    // double gpa = 2.5;
+    // char grade = 'A';
+    // bool student = true;
+    // char grades[] = {'A', 'B', 'C', 'D', 'F'};
+    // std::string students[] = {"Spongebob", "Patrick", "Squidward", "Sandy"};
+
+    // std::cout << sizeof(students)/sizeof(std::string) << " elements\n";
+    // std::cout << sizeof(students) << " bytes";
+
+    // ARRAY ITERATION: ------------------------------
+
+    // std::string students[] = {"James", "Jack", "Josh", "Jim", "John"};
+    // char grades[] = {'A', 'B', 'C', 'D', 'F'};
+
+    // for (int i = 0; i < sizeof(students)/sizeof(std::string); i++) {
+    //     std::cout << students[i] << '\n';
+    // }
+
+    // FOR EACH LOOP: ------------------------------------
+
+    // std::string students[] = {"Spongebob", "Patrick", "Squidward"};
+    // int grades[] = {65, 23, 94, 75};
+
+    // for (int grade : grades) {
+    //     std::cout << grade << '\n';
+    // }
+
+    // PASSING ARRAYS INTO FUNCTIONS: ----------------
+
+    // double prices[] = {49.99, 15.05, 75, 9.99};
+    // int size = sizeof(prices)/sizeof(double);
+    // double total = getTotal(prices, size);
+
+    // std::cout << "$" << total;
+
+    // SEARCHING ARRAYS: -----------------------------------
+
+    // int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    // int size = sizeof(numbers)/sizeof(numbers[0]);
+    // int index;
+    // int target;
+
+    // std::string foods[] = {"pizza", "hamburger", "hotdog"};
+    // int fsize = sizeof(foods)/sizeof(foods[0]);
+    // std::string ftarget;
+    
+    // std::cout << "Enter element to search for: " << '\n';
+    // std::getline(std::cin, ftarget);
+
+    // index = searchArray(foods, size, ftarget);
+
+    // if (index != -1) {
+    //     std::cout << ftarget << " is at index " << index;
+    // }
+    // else {
+    //     std::cout << ftarget << " is not in the array";
+    // }
+
+    // std::cout << "Yk what to do: ";
+    // std::cin >> target;
+
+    // index = binarySearch(numbers, size, target);
+
+    // std::cout << index;
