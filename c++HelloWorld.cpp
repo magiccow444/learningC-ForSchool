@@ -43,11 +43,28 @@ Comment
 // int searchArray(std::string array[], int size, std::string target);
 // int binarySearch(int array[], int size, int target);
 
+// void sort(int array[], int size);
+
 int main() {
+
 
 
     return 0;
 }   
+
+// void sort(int array[], int size) {
+//     int temp;
+
+//     for (int i = 0; i < size - 1; i++) {
+//         for (int j = 0; j < size - i; j++) {
+//             if (array[j] > array[j + 1]) {
+//                 temp = array[j];
+//                 array[j] = array[j + 1];
+//                 array[j + 1] = temp;
+//             }
+//         }
+//     }
+// }
 
 // YOOO I IMPLEMENTED THIS ALL ON MY OWN FOR THE FIRST TIME IN C++ WITH BARELY ANY HELP!! :DDDD
 // int binarySearch(int array[], int size, int target) {
@@ -764,3 +781,66 @@ int main() {
     // index = binarySearch(numbers, size, target);
 
     // std::cout << index;
+
+    // SORTING AN ARRAY: ------------------------------
+
+    // int array[] = {10, 7, 2, 3, 5, 9, 1, 6, 8, 4};
+    // int size = sizeof(array)/sizeof(array[0]);
+
+    // sort(array, size);
+
+    // for (int element : array) {
+    //     std::cout << element << " ";
+    // }
+
+    // FILL FUNCTION: ----------------------------------------
+
+    // const int SIZE = 100;
+    // std::string foods[100];
+
+    // fill(foods, foods + SIZE/2, "pizza");
+    // fill(foods + SIZE/2, foods + SIZE, "hamburger");
+
+    // for (std::string food : foods) { 
+    //     std::cout << food;
+    // }
+
+    // FILLING ARRAY WITH USER INPUT: -----------------------
+
+    // std::string foods[5];
+    // int size = sizeof(foods)/sizeof(foods[0]);
+    // std::string temp;
+
+    // for (int i = 0; i < size; i++) {
+    //     std::cout << "Enter a food you like or 'q' to quit, #" << i << ": ";
+    //     std::getline(std::cin, temp);
+    //     if (temp == "q") {
+    //         break;
+    //     }
+    //     else {
+    //         foods[i] = temp;  
+    //     }
+    // }
+
+    // std::cout << "You like the following food:\n";
+
+    // for (int i = 0; !foods[i].empty(); i++) {
+    //     std::cout << foods[i] << '\n';
+    // }
+    
+    // MULTIDIMENSIONAL ARRAYS: ---------------------------
+
+    // Don't need a row size but you do need a column size
+    // std::string cars[][3] = {{"Mustang", "Escape", "F-150"},
+    //                          {"Corvette", "Equinox", "Silverado"},
+    //                          {"Challenger", "Durango", "Ram 1500"}};
+
+    // int rows = sizeof(cars)/sizeof(cars[0]);
+    // int columns = sizeof(cars[0])/sizeof(cars[0][0]);
+
+    // for (int i = 0; i < rows; i++) {
+    //     for (int j = 0; j < columns; j++) {
+    //         std::cout << cars[i][j] << " ";
+    //     }
+    //     std::cout << '\n';
+    // }
