@@ -46,9 +46,7 @@ Comment
 // void sort(int array[], int size);
 
 int main() {
-
-
-
+    
     return 0;
 }   
 
@@ -844,3 +842,98 @@ int main() {
     //     }
     //     std::cout << '\n';
     // }
+
+    // PRACTICE PROJECTS FOR CLASS: -------------------------------------
+
+    // -----------------------------------------------------------
+    // int array[5];
+    // int size = 5;
+    // char option;
+    // int temp;
+    // char quit;
+
+    // while (true) {
+
+    //     std::cout << "Please enter ten numbers for the array to sort or enter 'q' to quit and 'c' to continue\n";
+    //     std::cin >> quit;
+
+    //     if (quit ==  'q') { 
+    //         break;
+    //     }
+
+    //     for (int i = 0; i < size; i++) {
+    //         std::cout << "Index, " << i << ":\n";
+    //         std::cin >> array[i];
+    //     }
+
+    //     std::cout << "Would you like ascending or descending (a/d):\n";
+    //     std::cin >> option;
+
+    //     std::cout << "This is your original array:\n";
+
+    //     for (int i = 0; i < size; i++) {
+    //         std::cout << array[i] << " ";
+    //     }
+
+    //     if (option == 'a') { 
+    //         for (int i = 0; i < size - 1; i++) {
+    //             for (int j = 0; j < size - i - 1; j++) {
+    //                 if (array[j] > array[j + 1]) {
+    //                     temp = array[j];
+    //                     array[j] = array[j + 1];
+    //                     array[j + 1] = temp;
+    //                 }
+    //             } 
+    //         }
+    //     }
+    //     else if (option == 'd') {
+    //         for (int i = 0; i < size - 1; i++) {
+    //             for (int j = 0; j < size - i; j++) {
+    //                 if (array[j] < array[j + 1]) {
+    //                     temp = array[j];
+    //                     array[j] = array[j + 1];
+    //                     array[j + 1] = temp;
+    //                 }
+    //             } 
+    //         }
+    //     }
+
+    //     std::cout << '\n';
+    //     std::cout << "This is your new array:\n";
+
+    //     for (int i = 0; i < size; i++) {
+    //         std::cout << array[i] << " ";
+    //     }
+    //     std::cout << '\n';
+    // }
+    // ----------------------------------------------------
+
+    // int terms;
+    // int sum = 0;
+
+    // std::cout << "How many terms do you want to add?\n";
+    // std::cin >> terms;
+
+    // for (int i = 1; i <= terms; i++) {
+    //     sum += i;
+    // }
+
+    // std::cout << "Your sum is:\n" << sum;
+    // -------------------------------------------------------------
+
+    // int rows;
+    // int num;
+
+    // std::cout << "How many rows would you like the triangle to have?\n"; 
+    // std::cin >> rows;
+
+    // std::cout << "What number would you like to make the triangle out of?\n";
+    // std::cin >> num;
+
+    // for (int i = 1; i < rows; i++) {
+    //     for (int j = 0; j <= i; j++) {
+    //         std::cout << num;
+    //     }
+    //     std::cout << '\n';
+    // } 
+    // ----------------------------------------------------------------------------------
